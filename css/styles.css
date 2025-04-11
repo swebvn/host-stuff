@@ -1,16 +1,18 @@
 /* EMBRACECANVAS LTD - Main Stylesheet */
 
 :root {
-  --primary-color: #4f46e5; /* Updated to a richer indigo */
-  --secondary-color: #1e293b; /* Dark blue/slate */
-  --accent-color: #8b5cf6; /* Purple accent */
-  --light-color: #f8fafc; /* Light gray/blue */
-  --dark-color: #0f172a; /* Dark blue/slate */
-  --text-color: #334155; /* Slate gray for text */
+  --primary-color: #4f46e5; /* Keep rich indigo */
+  --primary-hover-color: #4338ca; /* Slightly darker indigo for hover */
+  --secondary-color: #1e293b; /* Dark blue/slate (Slate 800) - Slightly lighter */
+  --accent-color: #6366f1; /* Lighter indigo for accents/hovers (Indigo 500) */
+  --light-color: #f8fafc; /* Light gray/blue (Slate 50) */
+  --dark-color: #1e293b; /* Use Slate 800 for dark elements */
+  --text-color: #334155; /* Slate gray for main text (Slate 700) */
+  --text-secondary-color: #64748b; /* Lighter slate for secondary text (Slate 500) */
   --success-color: #10b981; /* Green for success messages */
   --warning-color: #f59e0b; /* Amber for warnings */
   --error-color: #ef4444; /* Red for errors */
-  --border-color: #e2e8f0; /* Light gray for borders */
+  --border-color: #e2e8f0; /* Light gray for borders (Slate 200) */
   --font-main: 'Geist', sans-serif;
   --font-heading: 'Geist', sans-serif;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -136,7 +138,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #4338ca; /* Slightly darker indigo on hover */
+  background-color: var(--primary-hover-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -175,7 +177,7 @@ nav ul li a:hover {
 .section-title p {
   max-width: 600px;
   margin: 0 auto;
-  color: #64748b; /* Lighter slate for subtitles */
+  color: var(--text-secondary-color); /* Lighter slate for subtitles */
 }
 
 .services-grid {
@@ -609,7 +611,7 @@ footer {
 
 .legal-content .last-updated {
   font-style: italic;
-  color: #64748b;
+  color: var(--text-secondary-color);
   margin-bottom: 2rem;
 }
 
